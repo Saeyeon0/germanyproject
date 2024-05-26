@@ -1,0 +1,42 @@
+.navbar {
+    padding: 1rem;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h1 {
+    margin: 0;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+  
+  .language-buttons {
+    margin-left: 1rem;
+  }
+  
+  .language-buttons button {
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+  .language-buttons button.active {
+    background: gray;
+    color: white;
+  }
+  
