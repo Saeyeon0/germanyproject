@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar: React.FC = () => {
@@ -10,13 +11,10 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar">
-      <div>
+      <Link to="/" className="navbar-logo">
         <h1>Germany Project</h1>
-      </div>
+      </Link>
       <div className="navbar-links">
-        <a href="#">Explore</a>
-        <a href="#">Contacts</a>
-        <a href="#">Login</a>
         <div className="language-buttons">
           <button
             onClick={() => handleLanguageChange('EN')}

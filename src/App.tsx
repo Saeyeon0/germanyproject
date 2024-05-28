@@ -1,14 +1,43 @@
-import React from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/homepage/Home";
+import MarioTotzekGruppe from "./pages/MarioTotzekGruppe";
+import Kontakt from "./pages/Kontakt";
+import Finanzdienstleistungen from "./pages/Finanzdienstleistungen/Finanzdienstleistungen";
+import Immobilien from "./pages/Immobilien";
+import Reisen from "./pages/Reisen";
+import Personal from "./pages/Personal";
+import {
+  Kontaktformular,
+  Impressum,
+  Datenschutz,
+} from "./pages/KontaktCategories";
+import Navbar from "./components//Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
 const App: React.FC = () => {
   return (
     <div>
       <Navbar />
-      <main style={{ padding: '1rem' }}>
-        <h2>Welcome</h2>
-        <p>This is the home page.</p>
+      <main style={{ padding: "1rem" }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mario-totzek-gruppe" element={<MarioTotzekGruppe />} />
+          <Route
+            path="/dienstleistungen/finanzdienstleistungen/*"
+            element={<Finanzdienstleistungen />}
+          />
+          <Route path="/dienstleistungen/immobilien" element={<Immobilien />} />
+          <Route path="/dienstleistungen/reisen" element={<Reisen />} />
+          <Route path="/dienstleistungen/personal" element={<Personal />} />
+          <Route path="/kontakt" element={<Kontakt />} />
+          <Route
+            path="/kontakt/kontaktformular"
+            element={<Kontaktformular />}
+          />
+          <Route path="/kontakt/impressum" element={<Impressum />} />
+          <Route path="/kontakt/datenschutz" element={<Datenschutz />} />
+        </Routes>
       </main>
       <Footer />
     </div>
