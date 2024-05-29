@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/homepage/Home";
-import MarioTotzekGruppe from "./pages/MarioTotzekGruppe";
 import Kontakt from "./pages/Kontakt";
 import Finanzdienstleistungen from "./pages/Finanzdienstleistungen/Finanzdienstleistungen";
 import Immobilien from "./pages/Immobilien";
@@ -22,7 +21,6 @@ const App: React.FC = () => {
       <main style={{ padding: "1rem" }}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/mario-totzek-gruppe" element={<MarioTotzekGruppe />} />
           <Route
             path="/dienstleistungen/finanzdienstleistungen/*"
             element={<Finanzdienstleistungen />}

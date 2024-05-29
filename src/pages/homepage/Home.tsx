@@ -1,32 +1,63 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './home.css';
+import React from "react";
+import "./home.css";
 
 const Home: React.FC = () => {
   return (
     <div className="home">
       <header className="home-header">
-        <img src="/logo.png" alt="Logo" className="logo" />
-        <nav className="home-nav">
-          <Link to="/mario-totzek-gruppe">Mario Totzek Gruppe</Link>
-          <div className="dropdown">
-            <span>Dienstleistungen</span>
-            <div className="dropdown-content">
-              <Link to="/dienstleistungen/finanzdienstleistungen">Finanzdienst-leistungen</Link>
-              <Link to="/dienstleistungen/immobilien">Immobilien</Link>
-              <Link to="/dienstleistungen/reisen">Reisen</Link>
-              <Link to="/dienstleistungen/personal">Personal</Link>
-            </div>
-          </div>
-          <div className="dropdown">
-            <span>Kontakt</span>
-            <div className="dropdown-content">
-              <Link to="/kontakt/kontaktformular">Kontaktformular</Link>
-              <Link to="/kontakt/impressum">Impressum</Link>
-              <Link to="/kontakt/datenschutz">Datenschutz</Link>
-            </div>
-          </div>
-        </nav>
+        <div>
+          <h2 className="homeTitle">Mario Totzek Gruppe</h2>
+          <ul>
+            <li>
+              <button className="link-button">
+                <a
+                  href="https://www.liquima.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Warenkreditversicherung, Factoring, Leasing</span>
+                  <h5>(Liquima)</h5>
+                </a>
+              </button>
+            </li>
+            <li>
+              <button className="link-button">
+                <a
+                  href="https://www.talisman-reisen.de/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Touristik</span>
+                  <h5>(Talisman Reisen GmbH & Co. KG)</h5>
+                </a>
+              </button>
+            </li>
+            <li>
+              <button className="link-button">
+                <a
+                  href="https://www.redpanda-properties.com/de/index_0__1_sp1_1.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Immobilien</span>
+                  <h5>(Red Panda Properties)</h5>
+                </a>
+              </button>
+            </li>
+            <li>
+              <button className="link-button">
+                <a
+                  href="https://job-und-personal.de/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Personalvermittlung</span>
+                  <h5>(Job & Personal)</h5>
+                </a>
+              </button>
+            </li>
+          </ul>
+        </div>
       </header>
     </div>
   );
