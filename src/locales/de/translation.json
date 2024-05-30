@@ -1,0 +1,21 @@
+{
+    "navbar": {
+        "services": "Dienstleistungen",
+        "service1": "Finanzdienstleistungen",
+        "service2": "Immobilien",
+        "service3": "Reisen",
+        "service4": "Personal",
+        "contact": "Kontakt",
+        "contact1": "Kontaktformular",
+        "contact2": "Impressum",
+        "contact3": "Datenschutz",
+        "login": "das Login"
+    },
+    "home": {
+        "title": "Mario Totzek Gruppe",
+        "category1": "Warenkreditversicherung, Factoring, Leasing",
+        "category2": "Touristik",
+        "category3": "Immobilien",
+        "category4": "Personalvermittlung"
+    }
+}

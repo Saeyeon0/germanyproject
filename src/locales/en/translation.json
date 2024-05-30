@@ -1,0 +1,21 @@
+{
+    "navbar": {
+        "services": "Services",
+        "service1": "Financial Services",
+        "service2": "Property",
+        "service3": "Travel",
+        "service4": "Staff",
+        "contact": "Contact",
+        "contact1": "Contact form",
+        "contact2": "Imprint",
+        "contact3": "Data protection",
+        "login": "Login"
+    },
+    "home": {
+        "title": "Mario Totzek Group",
+        "category1": "Trade Credit Insurance, Factoring, Leasing",
+        "category2": "Tourism",
+        "category3": "Property",
+        "category4": "Recruitment"
+    }
+}

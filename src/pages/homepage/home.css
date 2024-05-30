@@ -15,9 +15,12 @@
 .homeTitle {
   flex: 1;
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.3rem;
   color: #336699;
   margin: 0;
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-weight: 800;
+  text-shadow: 0 5px 10px #adc2d6;
 }
 
 ul {
@@ -29,6 +32,7 @@ ul {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  font-family: "Alegreya Sans SC", sans-serif;
 }
 
 li {
@@ -36,20 +40,22 @@ li {
 }
 
 .link-button {
-  background: #ccd9e6;
-  border: 2px solid #85a3c2;
+  background: #adc2d6;
+  border: 1px solid #ebf0f5;
   border-radius: 30px;
   padding: 0;
   font: inherit;
-  color: #4775a3;
+  color: white;
   cursor: pointer;
   text-align: center;
-  width: 400px;
+  width: 380px;
   height: 200px;
-  line-height: 1.2;
+  line-height: 1.5;
   justify-content: center;
   align-items: center;
   display: flex;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 10px #7a9cbd;
 }
 
 .link-button a {
@@ -63,7 +69,7 @@ li {
   justify-content: center;
   text-align: center;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.58rem;
 }
 
 .link-button a span {
@@ -73,13 +79,16 @@ li {
 .link-button a:hover {
   text-decoration: underline;
   background-color: #e0e8f0;
-  border: 1px solid #ffffff;
+  color: #85a3c2;
+  border: 1px solid #ebf0f5;
   border-radius: 30px;
+  box-shadow: 0 20px 15px #8fabc7;
+  transform: translateY(-10px);
 }
 
 .link-button h5 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: #336699;
 }

@@ -1,12 +1,21 @@
 import React from "react";
 import "./home.css";
+import { useTranslation } from "react-i18next";
 
 const Home: React.FC = () => {
+  const { t, i18n } = useTranslation();
+  // const [language, setLanguage] = useState(i18n.language);
+
+  // const handleLanguageChange = (lang: string) => {
+  //   i18n.changeLanguage(lang);
+  //   setLanguage(lang);
+  // };
+
   return (
     <div className="home">
       <header className="home-header">
         <div>
-          <h2 className="homeTitle">Mario Totzek Gruppe</h2>
+          <h2 className="homeTitle">{t("home.title")}</h2>
           <ul>
             <li>
               <button className="link-button">
@@ -15,7 +24,7 @@ const Home: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Warenkreditversicherung, Factoring, Leasing</span>
+                  <span>{t("home.category1")}</span>
                   <h5>(Liquima)</h5>
                 </a>
               </button>
@@ -27,7 +36,7 @@ const Home: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Touristik</span>
+                  <span>{t("home.category2")}</span>
                   <h5>(Talisman Reisen GmbH & Co. KG)</h5>
                 </a>
               </button>
@@ -39,7 +48,7 @@ const Home: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Immobilien</span>
+                  <span>{t("home.category3")}</span>
                   <h5>(Red Panda Properties)</h5>
                 </a>
               </button>
@@ -51,7 +60,7 @@ const Home: React.FC = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span>Personalvermittlung</span>
+                  <span>{t("home.category4")}</span>
                   <h5>(Job & Personal)</h5>
                 </a>
               </button>
