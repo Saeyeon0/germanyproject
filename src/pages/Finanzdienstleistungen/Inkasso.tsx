@@ -1,10 +1,17 @@
 import React from 'react';
+import Card from '../../components/Card/Card';
+import debt from "../../assets/debt.webp"
+import { useTranslation } from "react-i18next";
 
 const Inkasso: React.FC = () => {
+  const { t } = useTranslation();
   return (
-    <div>
-      <h3>Inkasso</h3>
-      <p>Text about Inkasso.</p>
+    <div className="category">
+      <Card
+        image={debt}
+        title={t("card.4.title")}
+        description={t("card.4.description")}
+      />
     </div>
   );
 };

@@ -17,5 +17,41 @@
         "category2": "Touristik",
         "category3": "Immobilien",
         "category4": "Personalvermittlung"
+    },
+    "services": {
+        "1": "Finanzdienst-leistungen",
+        "1a": "Warenkreditversicherung",
+        "1b": "Factoring / Finanzierung",
+        "1c": "eCommerce",
+        "1d": "Inkasso",
+        "1e": "Bürgschaften",
+        "1f": "Vertrauensschadenversicherung"
+    },
+    "card": {
+        "button": "Checke jetzt aus",
+        "1": {
+            "title": "Warenkreditversicherung",
+            "description": "Schützen Sie Ihr Unternehmen vor dem Risiko von Zahlungsausfällen mit einer Warenkreditversicherung. Diese essenzielle Absicherung stellt sicher, dass Sie für Ihre Waren oder Dienstleistungen bezahlt werden, selbst wenn Ihre Kunden in Zahlungsverzug geraten. Sichern Sie Ihren Cashflow, erweitern Sie Ihren Markt und handeln Sie mit Vertrauen. Kontaktieren Sie uns noch heute, um mehr über den Schutz Ihres Unternehmens mit einer Warenkreditversicherung zu erfahren."
+        },
+        "2": {
+            "title": "Factoring / Finanzierung",
+            "description": "Verbessern Sie Ihren Cashflow und fördern Sie Wachstum mit unseren Factoring- und Finanzierungsdiensten. Wandeln Sie unbezahlte Rechnungen in sofortiges Bargeld um, sichern Sie sich flexible Geschäftskredite und finanzieren Sie neue Ausrüstung mühelos. Stärken Sie Ihr Unternehmen mit maßgeschneiderten Finanzlösungen."
+        },
+        "3": {
+            "title": "eCommerce",
+            "description": "Unsere Plattform garantiert sichere Transaktionen, schnellen Versand und ausgezeichneten Kundensupport. Wir legen Wert auf Qualität und Effizienz, um einen nahtlosen und vertrauenswürdigen Service zu bieten. Kaufen Sie mit Vertrauen ein, in dem Wissen, dass Ihre Zufriedenheit unsere oberste Priorität ist."
+        },
+        "4": {
+            "title": "Inkasso",
+            "description": "Effizientes Inkasso ist entscheidend für die Aufrechterhaltung finanzieller Stabilität. Unser professionelles Team ist spezialisiert auf schnelle, respektvolle und rechtlich konforme Lösungen zur Schuldenrückgewinnung. Wir setzen auf eine verträgliche Einigung, während wir gleichzeitig Ihre Interessen schützen. Lassen Sie uns die Last überfälliger Konten lindern und sich auf das konzentrieren, was wirklich zählt – Ihr Unternehmen."
+        },
+        "5": {
+            "title": "Bürgschaften",
+            "description": "Erleben Sie sorgenfreies Einkaufen mit unseren umfassenden Garantien. Wir legen Wert auf Qualität, pünktliche Lieferung, transparenten Service und zuverlässige Unterstützung. Kaufen Sie mit Vertrauen ein, denn Ihre Zufriedenheit ist nicht nur unser Ziel, sondern unser Versprechen."
+        },
+        "6": {
+            "title": "Vertrauensschadenversicherung",
+            "description": "Schützen Sie Ihr Unternehmen mit Fidelity-Versicherung vor den Risiken von Mitarbeiter*innenunehrlichkeit und Betrug. Unsere Policen decken finanzielle Verluste durch Diebstahl, Unterschlagung und andere betrügerische Handlungen ab. Bewahren Sie Ihre Vermögenswerte und Ihren inneren Frieden, indem Sie Ihr Unternehmen vor potenziellen finanziellen Schäden schützen. Entdecken Sie unsere Fidelity-Versicherungsoptionen noch heute."
+        }
     }
 }

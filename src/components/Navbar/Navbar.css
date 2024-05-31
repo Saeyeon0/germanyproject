@@ -2,19 +2,22 @@
   padding: 1rem;
   background: #7094b8;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   color: white;
 }
 
 .logo {
-  width: 50px;
+  width: 60px;
   height: auto;
+  margin-left: 30px;
+  border-radius: 30px;
 }
 
 .navbar-logo {
   display: flex;
-  align-items: left;
+  align-items: center;
+  margin-left: 15px;
 }
 
 .navbar-logo h1 {
@@ -22,6 +25,8 @@
   color: white;
   font-family: "Major Mono Display", monospace;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
 }
 
 .navbar h1:hover {
@@ -31,6 +36,8 @@
 .navbar-links {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: 30px;
 }
 
 .navbar-links a {
@@ -103,7 +110,8 @@
 .auth-buttons {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: 10px;
+  margin-right: 15px;
 }
 
 .auth-button {

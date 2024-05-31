@@ -1,26 +1,42 @@
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .home {
-  padding: 20px;
+  padding: 50px;
+  background: linear-gradient(270deg, #ebf0f5, #d6e0eb, #c2d1e0);
+  background-size: 600% 600%;
+  animation: gradientBackground 15s ease infinite;
+  border-radius: 20px;
 }
 
 .home-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  background: white;
+  background: none;
   padding: 1rem;
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 20px;
 }
 
 .homeTitle {
-  flex: 1;
-  text-align: center;
   font-size: 3.3rem;
   color: #336699;
   margin: 0;
   font-family: "Alegreya Sans SC", sans-serif;
   font-weight: 800;
-  text-shadow: 0 5px 10px #adc2d6;
+  text-shadow: 0 5px 10px #8fabc7;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 ul {
@@ -29,33 +45,37 @@ ul {
   display: flex;
   gap: 10px;
   margin-top: 20px;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-family: "Alegreya Sans SC", sans-serif;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 li {
-  margin-bottom: 10px;
+  flex: 1;
 }
 
 .link-button {
   background: #adc2d6;
   border: 1px solid #ebf0f5;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 0;
   font: inherit;
   color: white;
   cursor: pointer;
   text-align: center;
-  width: 380px;
-  height: 200px;
+  /* width: 100%; */
+  width: 314px;
+  height: 630px;
   line-height: 1.5;
   justify-content: center;
   align-items: center;
   display: flex;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 5px 10px #7a9cbd;
+  background-size: cover;
+  background-position: center;
 }
 
 .link-button a {
@@ -70,25 +90,43 @@ li {
   text-align: center;
   font-weight: 700;
   font-size: 1.58rem;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+  border-radius: 10px;
 }
 
 .link-button a span {
   margin-bottom: 10px;
 }
 
-.link-button a:hover {
-  text-decoration: underline;
-  background-color: #e0e8f0;
-  color: #85a3c2;
-  border: 1px solid #ebf0f5;
-  border-radius: 30px;
+.link-button:hover {
   box-shadow: 0 20px 15px #8fabc7;
-  transform: translateY(-10px);
+  transform: translateY(-18px);
 }
 
 .link-button h5 {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #336699;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 20px;
+  }
+  
+  .homeTitle {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .link-button {
+    width: 100%; /* Ensure buttons take full width */
+    height: auto; /* Allow height to adjust */
+    max-width: 100%; /* Remove max-width */
+  }
+
+  .link-button a {
+    font-size: 1.2rem;
+  }
 }

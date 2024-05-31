@@ -1,10 +1,17 @@
 import React from 'react';
+import Card from '../../components/Card/Card';
+import warenkreditversicherung from "../../assets/warenkreditversicherung.webp"
+import { useTranslation } from "react-i18next";
 
 const Warenkreditversicherung: React.FC = () => {
+  const { t } = useTranslation();
   return (
-    <div>
-      <h3>Warenkreditversicherung</h3>
-      <p>Text about Warenkreditversicherung.</p>
+    <div className="category">
+      <Card
+        image={warenkreditversicherung}
+        title={t("card.1.title")}
+        description={t("card.1.description")}
+      />
     </div>
   );
 };

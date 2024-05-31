@@ -7,14 +7,16 @@ import Inkasso from "./Inkasso";
 import Buergschaften from "./Buergschaften";
 import Vertrauensschadenversicherung from "./Vertrauensschadenversicherung";
 import "./finanzdienstleistungen.css";
+import { useTranslation } from "react-i18next";
 
 const Finanzdienstleistungen: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="finanzdienstleistungen-container">
-      <h2>Finanzdienst-leistungen</h2>
+      <h1>{t("services.1")}</h1>
       <ul>
         <li>
-          <Link to="warenkreditversicherung">a. Warenkreditversicherung</Link>
+          <Link to="warenkreditversicherung">{t("services.1a")}</Link>
         </li>
         <Routes>
           <Route
@@ -23,7 +25,7 @@ const Finanzdienstleistungen: React.FC = () => {
           />
         </Routes>
         <li>
-          <Link to="factoring-finanzierung">b. Factoring / Finanzierung</Link>
+          <Link to="factoring-finanzierung">{t("services.1b")}</Link>
         </li>
         <Routes>
           <Route
@@ -32,27 +34,25 @@ const Finanzdienstleistungen: React.FC = () => {
           />
         </Routes>
         <li>
-          <Link to="ecommerce">c. eCommerce</Link>
+          <Link to="ecommerce">{t("services.1c")}</Link>
         </li>
         <Routes>
           <Route path="ecommerce" element={<Ecommerce />} />
         </Routes>
         <li>
-          <Link to="inkasso">d. Inkasso</Link>
+          <Link to="inkasso">{t("services.1d")}</Link>
         </li>
         <Routes>
           <Route path="inkasso" element={<Inkasso />} />
         </Routes>
         <li>
-          <Link to="buergschaften">e. Bürgschaften</Link>
+          <Link to="buergschaften">{t("services.1e")}</Link>
         </li>
         <Routes>
           <Route path="buergschaften" element={<Buergschaften />} />
         </Routes>
         <li>
-          <Link to="vertrauensschadenversicherung">
-            f. Vertrauensschadenversicherung
-          </Link>
+          <Link to="vertrauensschadenversicherung">{t("services.1f")}</Link>
         </li>
         <Routes>
           <Route

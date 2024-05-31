@@ -17,5 +17,41 @@
         "category2": "Tourism",
         "category3": "Property",
         "category4": "Recruitment"
+    },
+    "services": {
+        "1": "Financial services",
+        "1a": "Trade Credit Insurance",
+        "1b": "Factoring / Financing",
+        "1c": "eCommerce",
+        "1d": "Debt collection",
+        "1e": "Guarantees",
+        "1f": "Fidelity insurance"
+    },
+    "card": {
+        "button": "Check out now",
+        "1": {
+            "title": "Trade Credit Insurance",
+            "description": "Protect your business from the risk of non-payment with Trade Credit Insurance. This essential coverage ensures you receive payment for goods or services, even if your customers default. Secure your cash flow, expand your market, and trade with confidence. Contact us today to learn more about safeguarding your business with Trade Credit Insurance."
+        },
+        "2": {
+            "title": "Factoring / Financing",
+            "description": "Boost your cash flow and fund growth with our Factoring and Financing services. Convert unpaid invoices into immediate cash, secure flexible business loans, and finance new equipment easily. Empower your business with tailored financial solutions today."
+        },
+        "3": {
+            "title": "eCommerce",
+            "description": "Our platform ensures secure transactions, prompt shipping, and excellent customer support. We prioritize quality and efficiency to deliver a seamless and trustworthy service. Shop with confidence, knowing that your satisfaction is our utmost priority."
+        },
+        "4": {
+            "title": "Debt collection",
+            "description": "Efficient debt collection is essential for maintaining financial stability. Our professional team specializes in swift, respectful, and legally compliant debt recovery solutions. We prioritize amicable resolutions while ensuring your interests are protected. Let us alleviate the burden of overdue accounts, allowing you to focus on what matters most—your business."
+        },
+        "5": {
+            "title": "Guarantees",
+            "description": "Experience peace of mind with our comprehensive guarantees. We prioritize quality, timely delivery, transparent service, and reliable support. Shop confidently knowing that your satisfaction is not just our goal, it's our promise."
+        },
+        "6": {
+            "title": "Fidelity insurance",
+            "description": "Protect your business against the risks of employee dishonesty and fraudulent acts with Fidelity insurance. Our policies provide coverage for financial losses resulting from theft, embezzlement, and other fraudulent activities committed by employees. Safeguard your assets and maintain peace of mind knowing that your business is shielded from potential financial harm. Explore our Fidelity insurance options today."
+        }
     }
 }

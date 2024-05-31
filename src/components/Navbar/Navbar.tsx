@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { useTranslation } from "react-i18next";
+import logo from "../../assets/logo.jpg";
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -23,9 +24,11 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="navbar">
-      {/* <img src="/logo.png" alt="Logo" className="logo" /> */}
+      <img src={logo} alt="Logo" className="logo" />
       <Link to="/" className="navbar-logo">
-        <h1>Mario Totzek Gruppe</h1>
+        <h1>
+          Mario Totzek <br></br>Gruppe
+        </h1>
       </Link>
       <div className="navbar-links">
         <div className="dropdown">
@@ -34,7 +37,9 @@ const Navbar: React.FC = () => {
             <Link to="/dienstleistungen/finanzdienstleistungen">
               {t("navbar.service1")}
             </Link>
-            <Link to="/dienstleistungen/immobilien">{t("navbar.service2")}</Link>
+            <Link to="/dienstleistungen/immobilien">
+              {t("navbar.service2")}
+            </Link>
             <Link to="/dienstleistungen/reisen">{t("navbar.service3")}</Link>
             <Link to="/dienstleistungen/personal">{t("navbar.service4")}</Link>
           </div>
@@ -87,7 +92,11 @@ const Navbar: React.FC = () => {
               <button type="submit" className="submit-button">
                 Login
               </button>
-              <button type="button" className="account" onClick={toggleLoginModal}>
+              <button
+                type="button"
+                className="account"
+                onClick={toggleLoginModal}
+              >
                 Create an account
               </button>
             </form>
