@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 40px;
 }
 
 .navbar-links a {
@@ -52,7 +52,7 @@
 
 .language-buttons button {
   background: #c2d1e0;
-  color: white;
+  color: black;
   border: none;
   cursor: pointer;
   padding: 0.5rem;
@@ -116,7 +116,7 @@
 
 .auth-button {
   background: #c2d1e0;
-  color: white;
+  color: black;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;

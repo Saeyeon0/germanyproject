@@ -4,7 +4,7 @@
         "service1": "Finanzdienstleistungen",
         "service2": "Immobilien",
         "service3": "Reisen",
-        "service4": "Personal",
+        "service4": "Personalvermittlung",
         "contact": "Kontakt",
         "contact1": "Kontaktformular",
         "contact2": "Impressum",
@@ -53,5 +53,16 @@
             "title": "Vertrauensschadenversicherung",
             "description": "Schützen Sie Ihr Unternehmen mit Fidelity-Versicherung vor den Risiken von Mitarbeiter*innenunehrlichkeit und Betrug. Unsere Policen decken finanzielle Verluste durch Diebstahl, Unterschlagung und andere betrügerische Handlungen ab. Bewahren Sie Ihre Vermögenswerte und Ihren inneren Frieden, indem Sie Ihr Unternehmen vor potenziellen finanziellen Schäden schützen. Entdecken Sie unsere Fidelity-Versicherungsoptionen noch heute."
         }
+    },
+    "recruitment": {
+        "title": "Personalvermittlung",
+        "name": "Name",
+        "name_ph": "Geben Sie Ihren Namen ein",
+        "email": "E-mail",
+        "email_ph": "Geben Sie Ihre E-Mail-Adresse ein",
+        "position": "Position",
+        "position_ph": "Position, für die Sie sich bewerben",
+        "cv": "Lebenslauf",
+        "submit": "Absenden"
     }
 }

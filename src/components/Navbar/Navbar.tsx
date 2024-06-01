@@ -37,11 +37,21 @@ const Navbar: React.FC = () => {
             <Link to="/dienstleistungen/finanzdienstleistungen">
               {t("navbar.service1")}
             </Link>
-            <Link to="/dienstleistungen/immobilien">
+            <a
+              href="https://www.redpanda-properties.com/de/index_0__1_sp1_1.htm"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {t("navbar.service2")}
-            </Link>
-            <Link to="/dienstleistungen/reisen">{t("navbar.service3")}</Link>
-            <Link to="/dienstleistungen/personal">{t("navbar.service4")}</Link>
+            </a>
+            <a
+              href="https://www.talisman-reisen.de/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("navbar.service3")}
+            </a>
+            <Link to="/personalvermittlung">{t("navbar.service4")}</Link>
           </div>
         </div>
         <div className="dropdown">
@@ -83,11 +93,11 @@ const Navbar: React.FC = () => {
             <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" placeholder="Enter your email" name="email" required />
               </div>
               <div className="form-group">
                 <label htmlFor="password">Password:</label>
-                <input type="password" id="password" name="password" required />
+                <input type="password" id="password" placeholder="Enter your password" name="password" required />
               </div>
               <button type="submit" className="submit-button">
                 Login

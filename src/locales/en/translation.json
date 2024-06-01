@@ -4,7 +4,7 @@
         "service1": "Financial Services",
         "service2": "Property",
         "service3": "Travel",
-        "service4": "Staff",
+        "service4": "Recruitment",
         "contact": "Contact",
         "contact1": "Contact form",
         "contact2": "Imprint",
@@ -53,5 +53,16 @@
             "title": "Fidelity insurance",
             "description": "Protect your business against the risks of employee dishonesty and fraudulent acts with Fidelity insurance. Our policies provide coverage for financial losses resulting from theft, embezzlement, and other fraudulent activities committed by employees. Safeguard your assets and maintain peace of mind knowing that your business is shielded from potential financial harm. Explore our Fidelity insurance options today."
         }
+    },
+    "recruitment": {
+        "title": "Recruitment",
+        "name": "Name",
+        "name_ph": "Enter your name",
+        "email": "E-mail",
+        "email_ph": "Enter your email",
+        "position": "Position",
+        "position_ph": "Position you're applying for",
+        "cv": "CV",
+        "submit": "Submit"
     }
 }

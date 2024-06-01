@@ -3,15 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/homepage/Home";
 import Kontakt from "./pages/Kontakt";
 import Finanzdienstleistungen from "./pages/Finanzdienstleistungen/Finanzdienstleistungen";
-import Immobilien from "./pages/Immobilien";
-import Reisen from "./pages/Reisen";
-import Personal from "./pages/Personal";
 import {
   Kontaktformular,
   Impressum,
   Datenschutz,
 } from "./pages/KontaktCategories";
-import Personalvermittlung from './pages/Personalvermittlung';
+import Personalvermittlung from './pages/Personalvermittlung/Personalvermittlung';
 import Navbar from "./components//Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
@@ -27,12 +24,6 @@ const App: React.FC = () => {
               path="/dienstleistungen/finanzdienstleistungen/*"
               element={<Finanzdienstleistungen />}
             />
-            <Route
-              path="/dienstleistungen/immobilien"
-              element={<Immobilien />}
-            />
-            <Route path="/dienstleistungen/reisen" element={<Reisen />} />
-            <Route path="/dienstleistungen/personal" element={<Personal />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route
               path="/kontakt/kontaktformular"
