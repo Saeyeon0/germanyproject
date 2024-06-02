@@ -149,13 +149,14 @@
 }
 
 .modal-content {
-  background-color: white;
+  background-color: #f5f7fa;
   padding: 20px;
   border-radius: 10px;
   width: 300px;
   position: relative;
   color: black;
   font-family: "Alegreya Sans SC", sans-serif;
+  text-align: center;
 }
 
 .close-button {
@@ -175,18 +176,22 @@
 
 .form-group {
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .form-group label {
   display: block;
   margin-bottom: 5px;
+  margin-left: 5px;
 }
 
 .form-group input {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   box-sizing: border-box;
   font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 13px;
+  margin-bottom: 5px
 }
 
 .submit-button {
@@ -205,17 +210,18 @@
   background-color: #557a99;
 }
 
-.account {
+.toggle-button {
   cursor: pointer;
   border: none;
   align-items: center;
   justify-content: center;
   display: flex;
   padding: 10px;
-  background-color: white;
+  background-color: #f5f7fa;
   text-align: center;
   font-family: "Alegreya Sans SC", sans-serif;
   width: 100%;
   text-decoration: underline;
   margin-top: 10px;
+  font-size: 13px;
 }

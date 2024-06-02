@@ -9,7 +9,19 @@
         "contact1": "Kontaktformular",
         "contact2": "Impressum",
         "contact3": "Datenschutz",
-        "login": "das Login"
+        "login": "Anmeldung",
+        "email": "E-mail:",
+        "email_ph": "Geben Sie Ihre E-Mail-Adresse ein",
+        "password": "Passwort:",
+        "password_ph": "Geben Sie Ihr Passwort ein",
+        "login_btn": "Anmelden",
+        "create": "Konto erstellen",
+        "name": "Name",
+        "name_ph": "Geben Sie Ihren Namen ein",
+        "confirm_password": "Passwort bestätigen:",
+        "confirm_password_ph": "Bestätigen Sie Ihr Passwort",
+        "password_mismatch": "Passwörter stimmen nicht überein",
+        "registration": "Registrierung"
     },
     "home": {
         "title": "Mario Totzek Gruppe",

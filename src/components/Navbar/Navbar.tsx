@@ -8,6 +8,9 @@ const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language);
   const [isLoginModalOpen, setLoginModalOpen] = useState(false);
+  const [isRegistration, setIsRegistration] = useState(false); // State to manage form toggle
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const handleLanguageChange = (lang: string) => {
     i18n.changeLanguage(lang);
@@ -16,10 +19,20 @@ const Navbar: React.FC = () => {
 
   const toggleLoginModal = () => {
     setLoginModalOpen(!isLoginModalOpen);
+    setIsRegistration(false); // Reset to login form when modal is closed
+  };
+
+  const toggleForm = () => {
+    setIsRegistration(!isRegistration);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (isRegistration && password !== confirmPassword) {
+      alert(t("navbar.password_mismatch"));
+      return;
+    }
+    // Handle form submission logic
   };
 
   return (
@@ -89,26 +102,97 @@ const Navbar: React.FC = () => {
             <span className="close-button" onClick={toggleLoginModal}>
               &times;
             </span>
-            <h2>Login</h2>
+            <h2>{isRegistration ? t("navbar.registration") : t("navbar.login")}</h2>
             <form onSubmit={handleSubmit}>
-              <div className="form-group">
-                <label htmlFor="email">Email:</label>
-                <input type="email" id="email" placeholder="Enter your email" name="email" required />
-              </div>
-              <div className="form-group">
-                <label htmlFor="password">Password:</label>
-                <input type="password" id="password" placeholder="Enter your password" name="password" required />
-              </div>
-              <button type="submit" className="submit-button">
-                Login
-              </button>
-              <button
-                type="button"
-                className="account"
-                onClick={toggleLoginModal}
-              >
-                Create an account
-              </button>
+              {!isRegistration ? (
+                <>
+                  <div className="form-group">
+                    <label htmlFor="email">{t("navbar.email")}</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder={t("navbar.email_ph")}
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="password">{t("navbar.password")}</label>
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder={t("navbar.password_ph")}
+                      name="password"
+                      required
+                    />
+                  </div>
+                  <button type="submit" className="submit-button">
+                    {t("navbar.login_btn")}
+                  </button>
+                  <button
+                    type="button"
+                    className="toggle-button"
+                    onClick={toggleForm}
+                  >
+                    {t("navbar.create")}
+                  </button>
+                </>
+              ) : (
+                <>
+                  <div className="form-group">
+                    <label htmlFor="name">{t("navbar.name")}</label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder={t("navbar.name_ph")}
+                      name="name"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="email">{t("navbar.email")}</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder={t("navbar.email_ph")}
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="password">{t("navbar.password")}</label>
+                    <input
+                      type="password"
+                      id="password"
+                      placeholder={t("navbar.password_ph")}
+                      name="password"
+                      required
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+                  </div>
+                  <div className="form-group">
+                    <label htmlFor="confirmPassword">{t("navbar.confirm_password")}</label>
+                    <input
+                      type="password"
+                      id="confirmPassword"
+                      placeholder={t("navbar.confirm_password_ph")}
+                      name="confirmPassword"
+                      required
+                      onChange={(e) => setConfirmPassword(e.target.value)}
+                    />
+                  </div>
+                  <button type="submit" className="submit-button">
+                    {t("navbar.create")}
+                  </button>
+                  <button
+                    type="button"
+                    className="toggle-button"
+                    onClick={toggleForm}
+                  >
+                    {t("navbar.login")}
+                  </button>
+                </>
+              )}
             </form>
           </div>
         </div>

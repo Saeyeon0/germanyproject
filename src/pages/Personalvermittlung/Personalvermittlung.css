@@ -14,8 +14,8 @@
     background-position: center;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; /* Add this to position the overlay */
-    overflow: hidden; /* Add this to ensure the overlay covers the whole container */
+    position: relative;
+    overflow: hidden;
     font-family: "Alegreya Sans SC", sans-serif;
   }
   
